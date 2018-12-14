@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script type="text/javascript" >
+        	//本地登录按钮点击事件
+        	function loginButton(message){
+        		alert(message);
+        		// window.webkit.messageHandlers.loginPress.postMessage(message);
+        	}
+        	//本地注册按钮点击事件
+        	function registerButton(message){
+        		window.webkit.messageHandlers.registerPress.postMessage(message);
+        	}
+
+        	//登录成功后，native端调用H5的事件
+        	function loginSuccessCallBack(message){
+        		alert(message);
+        		document.getElementById('callBackResult').value = message;
+        	}
+        </script>
+	</head>
+	<body>
+		<h1>我的WKWebView Demo</h1>
+		<h2>下面都是随便画的一个H5页面</h1>
+		<form name="feedback" method="post" action="mailto:you@site.com">
+			<!-- Form elements will go in here -->
+		</form>
+
+		<form name="inputform">
+			<input type="button" onclick="loginButton('login')" value="登录">
+		</form>
+		<form name="inputform">
+			<input sytle={{margingTop:20}} type="button" onclick="registerButton('My Test Parameter')" value="注册">
+		</form>
+		<h1>native回调数据展示</h1>
+		<textarea id="callBackResult" type='value' rows="5" cols="40">
+			
+		</textarea>
+	</body>
+</html>>

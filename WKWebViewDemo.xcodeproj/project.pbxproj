@@ -15,6 +15,7 @@
 		958070CF21C3A18B00A05AE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 958070CE21C3A18B00A05AE6 /* main.m */; };
 		958070D921C3A18B00A05AE6 /* WKWebViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 958070D821C3A18B00A05AE6 /* WKWebViewDemoTests.m */; };
 		958070E421C3A18B00A05AE6 /* WKWebViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 958070E321C3A18B00A05AE6 /* WKWebViewDemoUITests.m */; };
+		958070F321C3A1C600A05AE6 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 958070F221C3A1C600A05AE6 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		958070DF21C3A18B00A05AE6 /* WKWebViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKWebViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		958070E321C3A18B00A05AE6 /* WKWebViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewDemoUITests.m; sourceTree = "<group>"; };
 		958070E521C3A18B00A05AE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		958070F221C3A1C600A05AE6 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		958070BE21C3A18B00A05AE6 /* WKWebViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				958070F121C3A1AD00A05AE6 /* HTMLSource */,
 				958070BF21C3A18B00A05AE6 /* AppDelegate.h */,
 				958070C021C3A18B00A05AE6 /* AppDelegate.m */,
 				958070C221C3A18B00A05AE6 /* ViewController.h */,
@@ -130,6 +133,14 @@
 				958070E521C3A18B00A05AE6 /* Info.plist */,
 			);
 			path = WKWebViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		958070F121C3A1AD00A05AE6 /* HTMLSource */ = {
+			isa = PBXGroup;
+			children = (
+				958070F221C3A1C600A05AE6 /* index.html */,
+			);
+			path = HTMLSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				958070CC21C3A18B00A05AE6 /* LaunchScreen.storyboard in Resources */,
+				958070F321C3A1C600A05AE6 /* index.html in Resources */,
 				958070C921C3A18B00A05AE6 /* Assets.xcassets in Resources */,
 				958070C721C3A18B00A05AE6 /* Main.storyboard in Resources */,
 			);
@@ -436,12 +448,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NGV7ZYJQ4M;
 				INFOPLIST_FILE = WKWebViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = z.bl.WKWebViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zbl.WKWebViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,12 +465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NGV7ZYJQ4M;
 				INFOPLIST_FILE = WKWebViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = z.bl.WKWebViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zbl.WKWebViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
